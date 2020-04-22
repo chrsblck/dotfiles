@@ -20,7 +20,7 @@ ZSH_THEME=""
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew colored-man-pages docker git go perl redis-cli terraform)
+plugins=(aws brew colored-man-pages docker git go mvn redis-cli terraform virtualenvwrapper)
 
 # User configuration
 
@@ -73,8 +73,15 @@ alias la="exa"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-fpath=(~/.zfunc $fpath)
-autoload cs dfmt gi tail-counts cuda-deploy print-aws-creds
+# Reload functions
+freload() { while (( $# )); do; unfunction $1; autoload -U $1; shift; done }
+
+# Autoloaded functions
+fpath=($fpath ~/.zfunc)
+for func in $^fpath/*(N-.x:t); autoload $func
+
+# Remove duplicates
+typeset -U path cdpath fpath manpath
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
