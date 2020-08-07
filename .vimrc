@@ -4,12 +4,6 @@ if has("syntax")
   syntax on
 endif
 
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
-"if has("autocmd")
-"  filetype plugin indent on
-"endif
-
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
 set showcmd		" Show (partial) command in status line.
@@ -26,13 +20,13 @@ set showmatch
 set smartindent
 set laststatus=2
 set backspace=indent,eol,start
-set nu 			" Turn on line numbers
-set ai  		" Turn on Auto indention
+set nu
+set ai
 set hlsearch
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set completeopt=longest,menuone "auto-completion magic
+set completeopt=longest,menuone
 
 " Jump to last known position
 autocmd BufReadPost *
@@ -53,13 +47,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'lifepillar/vim-solarized8'
-Plug 'hotchpotch/perldoc-vim'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
 " Recommended in vim-go tut
 Plug 'ctrlpvim/ctrlp.vim'
-"Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mhinz/vim-startify'
@@ -68,7 +60,6 @@ call plug#end()
 
 set background=dark
 colorscheme gruvbox
-" colorscheme solarized8_dark
 
 " Airline
 let g:airline_powerline_fonts=0
