@@ -3,8 +3,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME=""
 
 # Uncomment the following line to disable auto-setting terminal title.
@@ -18,9 +16,7 @@ ZSH_THEME=""
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew colored-man-pages docker git go mvn redis-cli terraform virtualenvwrapper)
+plugins=(aws brew colored-man-pages docker git go mvn redis-cli terraform virtualenvwrapper yarn)
 
 # User configuration
 
@@ -41,7 +37,6 @@ alias vi=nvim
 
 # Tmuxinator
 export EDITOR='nvim'
-#source /usr/local/share/zsh/site-functions/_tmuxinator
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
