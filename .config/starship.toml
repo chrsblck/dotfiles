@@ -1,8 +1,11 @@
+[aws]
+disabled = true
+
 [java]
 disabled = true
 
-[python]
+[package]
 disabled = true
 
-[aws]
+[python]
 disabled = true
