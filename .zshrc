@@ -25,8 +25,8 @@ export PATH="/usr/local/bin:/Users/cblack/.gvm/vertx/current/bin:/Users/cblack/.
 source $ZSH/oh-my-zsh.sh
 
 # https://github.com/sindresorhus/pure
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # Colors
 export CLICOLOR=1
