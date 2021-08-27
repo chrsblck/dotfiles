@@ -16,7 +16,7 @@ ZSH_THEME=""
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(aws brew colored-man-pages docker git go mvn redis-cli terraform virtualenvwrapper yarn)
+plugins=(aws brew colored-man-pages docker git mvn redis-cli terraform)
 
 # User configuration
 
@@ -41,34 +41,19 @@ export EDITOR='nvim'
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-# Perl
-export PERL5LIB=/Users/cblack/perl5/lib/perl5
-
-# Go
-export GOPATH=/Users/cblack/Go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-
-# Python
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/libexec/bin/python
-
-# JS
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 # Coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 # Postgres
 export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 # Other stuff
 alias la="exa"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-cdpath=(~ ~/Developer/github ~/Developer/bitbucket)
+cdpath=(~ ~/Developer/github)
 
 # Reload functions
 freload() { while (( $# )); do; unfunction $1; autoload -U $1; shift; done }
@@ -90,3 +75,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 
 eval "$(starship init zsh)"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
