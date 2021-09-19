@@ -53,7 +53,7 @@ alias la="exa"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-cdpath=(~ ~/GitHub)
+cdpath=(~ ~/GitHub ~/code)
 
 # Reload functions
 freload() { while (( $# )); do; unfunction $1; autoload -U $1; shift; done }
