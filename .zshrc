@@ -20,7 +20,7 @@ plugins=(aws brew colored-man-pages docker git mvn redis-cli terraform)
 
 # User configuration
 
-export PATH="/usr/local/bin:/Users/cblack/.gvm/vertx/current/bin:/Users/cblack/.gvm/springboot/current/bin:/Users/cblack/.gvm/lazybones/current/bin:/Users/cblack/.gvm/jbake/current/bin:/Users/cblack/.gvm/groovyserv/current/bin:/Users/cblack/.gvm/groovy/current/bin:/Users/cblack/.gvm/griffon/current/bin:/Users/cblack/.gvm/grails/current/bin:/Users/cblack/.gvm/gradle/current/bin:/Users/cblack/.gvm/glide/current/bin:/Users/cblack/.gvm/gaiden/current/bin:/Users/cblack/.gvm/crash/current/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/Users/cblack/.gvm/vertx/current/bin:/Users/cblack/.gvm/springboot/current/bin:/Users/cblack/.gvm/lazybones/current/bin:/Users/cblack/.gvm/jbake/current/bin:/Users/cblack/.gvm/groovyserv/current/bin:/Users/cblack/.gvm/groovy/current/bin:/Users/cblack/.gvm/griffon/current/bin:/Users/cblack/.gvm/grails/current/bin:/Users/cblack/.gvm/gradle/current/bin:/Users/cblack/.gvm/glide/current/bin:/Users/cblack/.gvm/gaiden/current/bin:/Users/cblack/.gvm/crash/current/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/snap/bin"
 
 source $ZSH/oh-my-zsh.sh
 
