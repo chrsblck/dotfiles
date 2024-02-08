@@ -16,7 +16,7 @@ ZSH_THEME=""
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(1password aws colored-man-pages docker git gradle)
+plugins=(aws colored-man-pages docker git zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
@@ -31,9 +31,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # NeoVim
 alias vi=nvim
 
-# Tmuxinator
-export EDITOR='nvim'
-
 # Coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
@@ -46,11 +43,11 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Other stuff
-alias la="exa"
+alias ls="exa"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-cdpath=(~ ~/GitHub ~/code)
+cdpath=(~ ~/GitHub ~/Code)
 
 # Reload functions
 freload() { while (( $# )); do; unfunction $1; autoload -U $1; shift; done }
@@ -63,8 +60,6 @@ for func in $^fpath/*(N-.x:t); autoload $func
 
 # Remove duplicates
 typeset -U path cdpath fpath manpath
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
@@ -79,4 +74,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /home/chris/.config/op/plugins.sh
