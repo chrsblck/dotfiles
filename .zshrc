@@ -23,6 +23,8 @@ plugins=(aws colored-man-pages docker git zsh-autosuggestions zsh-syntax-highlig
 export PATH="/home/chris/.local/bin:/usr/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/snap/bin"
 
 source $ZSH/oh-my-zsh.sh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
 # Colors
 export CLICOLOR=1
@@ -44,8 +46,6 @@ eval "$(pyenv init -)"
 
 # Other stuff
 alias ls="exa"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 cdpath=(~ ~/GitHub ~/Code)
 
