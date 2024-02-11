@@ -1,6 +1,5 @@
 [core]
-	excludesfile = /Users/cblack/.gitignore_global
-    pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /home/chris/.gitignore_global
 [color]
 	ui = true
 [color "ddiff-highlight"]
@@ -17,5 +16,8 @@
 	whitespace = red reverse
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
+    	stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
 [commit]
+[user]
+	email = chrisbblack@gmail.com
+	name = chrsblck
