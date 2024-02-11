@@ -9,3 +9,9 @@ disabled = true
 
 [python]
 disabled = true
+
+[kotlin]
+disabled = true
+
+[gradle]
+disabled = true
