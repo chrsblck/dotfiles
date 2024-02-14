@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /home/chris/.gitignore_global
+	editor = nvim
 [color]
 	ui = true
 [color "ddiff-highlight"]
@@ -21,3 +22,9 @@
 [user]
 	email = chrisbblack@gmail.com
 	name = chrsblck
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
