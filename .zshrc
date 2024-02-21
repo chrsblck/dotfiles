@@ -30,9 +30,6 @@ source /usr/share/fzf/completion.zsh
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-# NeoVim
-alias vi=nvim
-
 # Coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
@@ -46,6 +43,8 @@ eval "$(pyenv init -)"
 
 # Other stuff
 alias ls="exa"
+alias vi=nvim
+alias cat=bat
 
 cdpath=(~ ~/GitHub ~/Code)
 
