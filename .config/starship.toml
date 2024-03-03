@@ -7,9 +7,6 @@ disabled = true
 [package]
 disabled = true
 
-[python]
-disabled = true
-
 [kotlin]
 disabled = true
 
