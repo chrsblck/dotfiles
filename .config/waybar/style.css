@@ -1,0 +1,78 @@
+@import url("./colors.css");
+* {
+    font-family: "Jetbrains Nerd Font";
+    font-size: 15px;
+}
+
+window#waybar {
+    background-color: @draculaComment;
+    color: @draculaBackground;
+}
+
+.modules-left {
+	background-color: @draculaBackground;
+	padding: 0px 0px 0px 0px;
+}
+
+.modules-right {
+	background-color: @draculaBackground;
+  color: @draculaForeground;
+	padding: 0px 5px 0px 0px;
+}
+
+#custom-scratch {
+	background-color: @draculaBackground;
+	color: @draculaComment;
+	padding: 0px 9px 0px 9px;
+}
+
+#workspaces {
+}
+
+#workspaces button {
+  padding: 0px 11px 0px 11px;
+  min-width: 1px;
+	color: @draculaCurrent;
+}
+
+#workspaces button.focused {
+	padding: 0px 11px 0px 11px;
+	background-color: @draculaComment;
+	color: @draculaForeground;
+}
+
+#mode {
+	 background-color: @draculaRed;
+	 color: @draculaForeground;
+   padding: 0px 5px 0px 5px;
+   border: 1px solid #2f343a;
+}
+
+#window {
+  color: @draculaPurple;
+  background-color: @draculaBackground;
+  padding: 0px 10px 0px 10px;
+}
+
+window#waybar.empty #window {
+	background-color: transparent;
+	color: transparent;
+}
+
+window#waybar.empty {
+  background-color: @draculaBackground;
+}
+
+#network, #temperature, #backlight, #pulseudio, #battery {
+  padding: 0px 15px 0px 15px;
+}
+
+#clock {
+	margin: 0px 15px 0px 15px;
+}
+
+#tray{
+   padding: 0px 8px 0px 5px;
+   margin: 0px 5px 0px 5px;
+}
+
