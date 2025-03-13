@@ -1,78 +1,86 @@
-@import url("./colors.css");
+@import "macchiato.css";
+
 * {
     font-family: "Jetbrains Nerd Font";
     font-size: 15px;
+    color: @text;
 }
 
-window#waybar {
-    background-color: @draculaComment;
-    color: @draculaBackground;
-}
-
-.modules-left {
-	background-color: @draculaBackground;
-	padding: 0px 0px 0px 0px;
-}
-
-.modules-right {
-	background-color: @draculaBackground;
-  color: @draculaForeground;
-	padding: 0px 5px 0px 0px;
-}
-
-#custom-scratch {
-	background-color: @draculaBackground;
-	color: @draculaComment;
-	padding: 0px 9px 0px 9px;
+#waybar {
+  background: transparent;
+  color: @text;
+  margin: 5px 5px;
 }
 
 #workspaces {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @surface0;
+  margin-left: 1rem;
 }
 
 #workspaces button {
-  padding: 0px 11px 0px 11px;
-  min-width: 1px;
-	color: @draculaCurrent;
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.4rem;
 }
 
-#workspaces button.focused {
-	padding: 0px 11px 0px 11px;
-	background-color: @draculaComment;
-	color: @draculaForeground;
+#workspaces button.active {
+  color: @red;
+  border-radius: 1rem;
 }
 
-#mode {
-	 background-color: @draculaRed;
-	 color: @draculaForeground;
-   padding: 0px 5px 0px 5px;
-   border: 1px solid #2f343a;
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
 }
 
 #window {
-  color: @draculaPurple;
-  background-color: @draculaBackground;
-  padding: 0px 10px 0px 10px;
+  background-color: @surface0;
+  color: @rosewater;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-window#waybar.empty #window {
-	background-color: transparent;
-	color: transparent;
-}
-
-window#waybar.empty {
-  background-color: @draculaBackground;
-}
-
-#network, #temperature, #backlight, #pulseudio, #battery {
-  padding: 0px 15px 0px 15px;
+#tray,
+#clock,
+#pulseaudio,
+#custom-scratch,
+#custom-lock {
+  background-color: @surface0;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
 }
 
 #clock {
-	margin: 0px 15px 0px 15px;
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
 }
 
-#tray{
-   padding: 0px 8px 0px 5px;
-   margin: 0px 5px 0px 5px;
+#pulseaudio {
+  color: @sapphire;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#custom-lock {
+    border-radius: 1rem 0px 0px 1rem;
+    color: @lavender;
+}
+
+#custom-scratch {
+  color: @rosewater;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
 }
 
