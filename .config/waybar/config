@@ -18,7 +18,13 @@
   "sway/workspaces": {
     "disable-scroll": true,
     "disable-markup": true,
-    "format": " {index} "
+    "format": " {icon} ",
+    "format-icons": {
+      "1": "  ", 
+      "2": "  ",
+      "3": "",  
+      "default": "",  
+    }
   },
   "sway/window": {
     "format": "{}",
