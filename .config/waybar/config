@@ -6,11 +6,11 @@
     "sway/workspaces",
     "custom/scratch",
     "sway/mode",
+  ],
+  "modules-center": [
     "sway/window"
   ],
-  "modules-center": [],
   "modules-right": [
-    "temperature",
     "pulseaudio",
     "clock",
     "tray"
@@ -18,7 +18,7 @@
   "sway/workspaces": {
     "disable-scroll": true,
     "disable-markup": true,
-    "format": "{index}"
+    "format": " {index} "
   },
   "sway/window": {
     "format": "{}",

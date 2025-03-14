@@ -6,6 +6,11 @@
     color: @text;
 }
 
+window#waybar {
+  background-color: shade(@base, 0.9);
+  border: 2px solid alpha(@crust, 0.3);
+}
+
 #waybar {
   background: transparent;
   color: @text;
@@ -25,13 +30,13 @@
   padding: 0.4rem;
 }
 
-#workspaces button.active {
-  color: @red;
-  border-radius: 1rem;
+#workspaces button.visible {
+    background: @sky;
+    border-radius: 1rem;
 }
 
 #workspaces button:hover {
-  color: @sapphire;
+  background: @sapphire;
   border-radius: 1rem;
 }
 
