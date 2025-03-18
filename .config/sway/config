@@ -201,13 +201,16 @@ bindsym XF86MonBrightnessUp exec light -A 10
 set $menu wofi --show drun  -i | xargs swaymsg exec --
 
 # Launch your browser:
-bindsym $mod+shift+b exec firefox
+bindsym $mod+shift+b exec google-chrome
 
 # Open a file manager:
 bindsym ctrl+$mod+f exec pcmanfm
 
+# Screenshot
+bindsym $mod+Shift+s exec slurp | grim -g - - | wl-copy
+
 # Open a terminal emulator:
-set $term alacritty
+set $term ghostty
 bindsym $mod+t exec $term
 
 # Kill focused window:
