@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(gh workflow *)",
+      "Bash(gh run *)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(gh pr create *)",
+      "Bash(gh pr merge *)",
+      "Bash(git reset --hard *)",
+      "Bash(git branch -D *)",
+      "Bash(git rebase *)"
+    ],
+    "defaultMode": "auto"
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true
+  },
+  "tui": "fullscreen",
+  "theme": "dark"
+}
