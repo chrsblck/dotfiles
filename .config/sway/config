@@ -209,6 +209,9 @@ bindsym ctrl+$mod+f exec pcmanfm
 # Screenshot
 bindsym $mod+Shift+s exec slurp | grim -g - - | wl-copy
 
+# Suspend/Sleep
+bindsym $mod+$alt+s exec systemctl suspend
+
 # Open a terminal emulator:
 set $term ghostty
 bindsym $mod+t exec $term
